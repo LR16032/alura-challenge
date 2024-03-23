@@ -1,0 +1,359 @@
+body{
+    background-color: #F3F5FC;
+    height: 100vh;
+}
+
+  #textoStyle{
+    display: none;
+    background:transparent;
+    border:transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* background: black; */
+    color: #495057;
+    align-self: flex-end;
+    height: 80%;
+    width: 95%;
+
+   
+  }  
+
+  #botones{
+    display: flex;
+    }
+
+
+  #copyText{
+    display: none;
+
+    width:  80%;
+    height:  67px;
+    top: 885px;
+    left: 1032px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    gap: 8px;
+    font-size: 15px;
+    
+  }
+
+ 
+
+
+  #copyText:hover{
+    cursor: pointer;
+    background: #909aa7;
+    color: white;
+    font-size: 18px;
+    transition:0.6s all;
+    transform:scale(1.1);
+  }
+
+
+main{
+    display: flex;
+    height: 100%;
+    /* background-color: red; */
+}
+
+    .logo{
+       
+      /* background-color: blueviolet;   */
+      width: 15%;
+      height: 93%;
+      align-self: center;
+      flex: 1 1 auto;
+      
+    }
+
+    .ingreso-datos{
+        /* background-color: aqua; */
+        width: 45%;
+        /* height: 80%; */
+        flex: 5 1 auto;
+       
+    }
+
+    .muestra-datos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 4 1 auto;
+        width: 30%;
+        /* background-color: beige; */
+    }
+
+        .ingreso-datos{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+
+            .input-datos{
+                display: flex;
+               /* background-color: rgb(69, 61, 61); */
+                height: 65%;
+               
+
+                textarea{
+                    align-self: center;
+                }
+            }
+
+        .container-dos{
+            /* background-color: orange; */
+            padding-bottom: 60px;
+            p{
+                padding-bottom: 10px;
+                margin-left: 25px;
+            }
+        }
+
+
+
+    /* modelo del input */
+    .encriptar-texto{
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        width: 577px;
+        height: 60%;
+        top: 168px;
+        left: 240px;
+
+        background:transparent;
+        border:transparent;
+        color:#0A3871;
+
+        margin-left: 24px;
+        /* Quitamos el contorno predeterminado */
+        outline: none;
+
+
+        /* para establecer el weight y el height del input */
+                
+        font-size: 32px;
+        font-weight: 400px;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+
+         
+
+
+
+    }
+        .encriptar-texto:focus {
+            border: transparent; /* Mantenemos el borde transparente cuando está enfocado */
+        }
+        .encriptar-texto::placeholder {
+            color: #0A3871 /* Color que desees para el placeholder */
+        }
+        
+
+    /* modelado de los botones */
+    .boton-encriptar{
+    width: 328px;
+    height:  67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background:  #0A3871;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+    }
+        .boton-encriptar:hover {
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; 
+            background: #28466c;
+            font-size: 1.2rem;
+            transition: 0.5s all;
+            transform: scale(1.1);
+          
+        }
+
+        .boton-desepcriptar{
+            width: 328px;
+            height:  67px;
+            padding: 24px;
+            border-radius: 24px;
+            gap: 8px;
+            background:  #D8DFE8;
+            color:#0A3871;
+            font-weight: bold;
+            font-size: 1rem;
+            }
+                .boton-desepcriptar:hover {
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out; 
+                    background: #909aa7;
+                    font-size: 1.2rem;
+                  
+                }
+        
+
+
+.contorno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height:93%;
+    width: 80%;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+    h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: 'Courier New', Courier, monospace;
+        /* width: 336px;
+        height: 58px; */
+        padding-bottom: 10px;
+
+    }
+
+    h3{
+        font-size: 16px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+
+}
+
+
+@media (376px <= width <=768px)
+    {
+        main{
+            flex-direction:column;
+            
+        }
+
+        .logo{
+            align-self: flex-start;
+            height: auto;
+            display: flex;
+         
+        }
+
+       .ingreso-datos{
+        width: auto;
+       }
+
+        .encriptar-texto{
+            width: 477px;
+            height: auto;
+        
+            
+        }
+
+        .muestra-datos{
+            width: auto;
+        }
+
+        #muneco{
+            display: none;
+        }
+
+        .input-datos{
+            height: 60%;
+        }
+
+      .input-datos textarea{
+            height: 80%;
+        }
+        .muestra-datos{
+            height: 1%;
+        }
+
+        .boton-desepcriptar{
+            margin-right: 1.5rem;
+        }
+
+     
+     
+    }
+
+    @media(200px<= width <=376px) {
+        main{
+            flex-direction:column;
+        }
+
+        .logo{
+            align-self: flex-start;
+            height: auto;
+            display: flex;
+         
+        }
+
+       .ingreso-datos{
+        width: auto;
+       }
+
+        .encriptar-texto{
+            width: 477px;
+            height: auto;
+            
+        }
+
+        .muestra-datos{
+            width: auto;
+        }
+
+        #muneco{
+            display: none;
+        }
+
+        .input-datos{
+            height: 60%;
+        }
+
+      .input-datos textarea{
+            height: 80%;
+        }
+        .muestra-datos{
+            height: 1%;
+        }
+
+        #botones{
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .boton-encriptar {
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+    }
+
+    .boton-desepcriptar {
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        }
+
+        .contorno{
+            height: 83%;
+}
+
+
+.container-dos{
+    padding-bottom: 1rem;
+}
+    }
+
